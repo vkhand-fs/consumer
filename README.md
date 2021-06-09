@@ -9,11 +9,11 @@
    
    **kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic fixedincome.trades.data**
 
-4. Start the 'Provider' Microservice and make sure it is running at port : 9081
+4. Start the 'Producer' Microservice and make sure it is running at port : 9081
 
 5. Start the Consumer Microservice and make sure it is running at port : 9082
 
-6. Launch PostMan and hit the POST url provided by 'Provider' MS. This should publish the trade deals into Kafka topic
+6. Launch PostMan and hit the POST url provided by 'Producer' MS. This should publish the trade deals into Kafka topic
 
 **POST localhost:9081/fixed-income/trades**
     
